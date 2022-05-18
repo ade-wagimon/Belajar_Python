@@ -106,7 +106,16 @@ Dalam konteks programming, ***`fungsi`*** merupakan suatu sekuens dari beberapa 
 	`Type(45)`
 	`<class 'int'>`
  
-Pada contoh tersebut, `Type` merupakan `fungsi` yang di panggil, dan "45" adalah `value` yang dikenai fungsi. Seperti yang kita ketahui sebelumnya, `fungsi` `type` merupakan suatu fungsi yang bertujuan untuk mencari atau mengidentifikasi suatu jenis `value`. Maka, didaptkan interpretasi `class 'int'` atau suatu `integer`. Ada beberapa jenis fungsi
+Pada contoh tersebut, `Type` merupakan `fungsi` yang di panggil, dan "45" adalah `value` yang dikenai fungsi. Seperti yang kita ketahui sebelumnya, `fungsi` `type` merupakan suatu fungsi yang bertujuan untuk mencari atau mengidentifikasi suatu jenis `value`. Maka, didaptkan interpretasi `class 'int'` atau suatu `integer`. Fungsi sendiri dibagi menjadi beberapa jenis, tapi secara garis besar terbagi menjadi dua jenis fungsi yaitu ***built in function*** dan ***definited function***. Sesuai dengan namanya ***built in function*** merupakan fungsi yang sudah tersedia di dalam package `Python`, contohnya adlah fungsi `type` diatas, sedangkan ***definited function*** adalah fungsi yang kita definisikan sendiri. Pada ***built in function*** ada yang disebut dengan ***math function***, fungsi ini buntuk memanggil fungsi atau rumus matematika seperti fungsi **sinus** dan **cosinus**, berikut contohnya:
+
+	`import math`
+	`x = math.sin(45)`
+	`y = math.cos(45)`
+	`z = x + y'
+	`z`
+	`1.4142`
+	
+
 
 
  
