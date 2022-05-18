@@ -103,7 +103,7 @@ Perhatikan, setiap statement setelah ***Conditional Statements*** pasti menjorok
  
 Dalam konteks programming, ***`fungsi`*** merupakan suatu sekuens dari beberapa `statement` yang menjalankan komputasi. Suatu `fungsi` didefinisakan dengan sebuah nama untuk sekuens dari statement-statement tersebut. Fungsi ini kemudian dapat dipanggil dengan ***Call*** nama dari `fungsi` tersebut. Misalkan:
 
-	`Type(45)`
+	`>>>type(45)`
 	`<class 'int'>`
  
 Pada contoh tersebut, `Type` merupakan `fungsi` yang di panggil, dan "45" adalah `value` yang dikenai fungsi. Seperti yang kita ketahui sebelumnya, `fungsi` `type` merupakan suatu fungsi yang bertujuan untuk mencari atau mengidentifikasi suatu jenis `value`. Maka, didaptkan interpretasi `class 'int'` atau suatu `integer`. Fungsi sendiri dibagi menjadi beberapa jenis, tapi secara garis besar terbagi menjadi dua jenis fungsi yaitu ***built in function*** dan ***definited function***. Sesuai dengan namanya ***built in function*** merupakan fungsi yang sudah tersedia di dalam package `Python`, contohnya adlah fungsi `type` diatas, sedangkan ***definited function*** adalah fungsi yang kita definisikan sendiri. Pada ***built in function*** ada yang disebut dengan ***math function***, fungsi ini buntuk memanggil fungsi atau rumus matematika seperti fungsi **sinus** dan **cosinus**, berikut contohnya:
@@ -114,6 +114,18 @@ Pada contoh tersebut, `Type` merupakan `fungsi` yang di panggil, dan "45" adalah
 	`z = x + y'
 	`z`
 	`1.4142`
+
+Sedangkan untuk ***definited function*** kita harus mendefinisikannya terlebih dahulu dengan keyword `def`. Setalah fungsi itu didefiniskan kita dapat menggunakan fungsi tersebut berkali-kali. Contoh:
+
+	`   def	lirik_lagu():
+	`	print("Ku kira, kita akan bersama")`
+	`	print("Begitu banyak yang sama, latarmu dan latarku")`
+	
+Pada contoh di atas kita telah mendefiniskan fungsi dengan nama **lirik_lagu**, dengan statement-statement `print("Ku kira, kita akan bersama")` dan `print("Begitu banyak yang sama, latarmu dan latarku")`, yang mana apabila kita tulis **lirik lagu** kita akan otomatis memanggil/`call` fungsi tersebut. Baris pertama pada contoh di atas, disebut ***header***. Sedangkan baris selanjutnya disebut ***body***. Pada ***header*** harus diawali oleh keyword `def`, nama fungsinya, dan diakhiri oleh tanda `titik dua` (`:`). Pada ***body***, berisi beberapa statement-statement untuk fungsi tersebut.
+
+	`>>>lirik_lagu`
+	`Ku kira, kita akan bersama`
+	`Begitu banyak yang sama, latarmu dan latarku`
 	
 
 
