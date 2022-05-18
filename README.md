@@ -98,10 +98,16 @@ Perhatikan, setiap statement setelah ***Conditional Statements*** pasti menjorok
 
 
 
+
 ## Fungsi (*Functions*)
  
+Dalam konteks programming, ***`fungsi`*** merupakan suatu sekuens dari beberapa `statement` yang menjalankan komputasi. Suatu `fungsi` didefinisakan dengan sebuah nama untuk sekuens dari statement-statement tersebut. Fungsi ini kemudian dapat dipanggil dengan ***Call*** nama dari `fungsi` tersebut. Misalkan:
 
+	`Type(45)`
+	`<class 'int'>`
  
+Pada contoh tersebut, `Type` merupakan `fungsi` yang di panggil, dan "45" adalah `value` yang dikenai fungsi. Seperti yang kita ketahui sebelumnya, `fungsi` `type` merupakan suatu fungsi yang bertujuan untuk mencari atau mengidentifikasi suatu jenis `value`. Maka, didaptkan interpretasi `class 'int'` atau suatu `integer`. Ada beberapa jenis fungsi
+
 
  
 
