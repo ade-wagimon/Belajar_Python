@@ -127,6 +127,40 @@ Pada contoh di atas kita telah mendefiniskan fungsi dengan nama **lirik_lagu**, 
 	`Ku kira, kita akan bersama`
 	`Begitu banyak yang sama, latarmu dan latarku`
 	
+## Iteration
+
+Jika kita menulis suatu assigment statement seperti ini:
+
+	`x = x + 1`
+
+maka kita akan mendaptkan hasil seperti ini **“NameError: name 'x' is not defined”**, karena `Python` membaca sisi kiri terlebih dahulu. Dimana kita belum memiliki nilai awal untuk **x** itu sendiri. Olehkarena itu, kita harus `menginisiasi` atau **`initialize`** nilai **x** dengan suatu assigment sederhana seperti:
+
+	`x = 0`
+	`x = x + 1`
+
+Dengan statement seperti itu, dari awal **x** sudah memiliki nilai yang kemudian diupdate lagi dengan statement berikutnya. Proses update ini sangat penting dalam proses `iteration` dan ‘recursion’ (tapi karena recursion itu susah dijelaskan dengan kata-kata, saya tidak akan membahasnya di buku ini). Mengupdate nilai dengan menambahkan anka 1 disebut ***increment***, tapi apabila mengupdate nilai dengan menguranginya dengan angka 1 disebut ***decrement***.
+
+Komputer bisasnya digunakan untuk menjalankan pekerjaan repetisi, dan sangat handal dalam bidang repetisi ini (dibanding manusia). `Python` menyediakan beberapa fitur bahasa untuk mempermudah proses repetisi ini.  Salah satunya adalah statement `while`, dan berikut contoh program sederhana yang menggunakan statement `while`:
+
+	`n = 3`
+	`while n > 0:`
+		`print(n)`
+		`n = n - 1`
+	`print(“'DOOORRR!”)`
+
+Ketika atau `while`  n lebih besar daripada 0, tampilkan atau `print` nilai **n** dan kemudian kurangi nilai **n** dengan **1**.  Maka statement akan terus diulangi sampai nilai **n** sama dengan **0**, kemudian ketika **n** sama dengan **0**, statement `while` akan mendapat hasil `False` dan layar akan menmpilkan tulisan ** DOOORRR!**. Program diatas bisa dibaca oleh orang yang tidak memiliki latar pendidikan programming, dan itulah salah satu kelebihan Python.
+
+Apabila program itu diurai: langkah pertama, program tersebut memastikan `condition` atau kondisi, apakah menghasilkan `True` atau `False`. Kemudian apabila kondisi sama dengan `True`, maka program akan meneksekusi ***body statement*** dan kembali ke step 1. Teatapi, apabila kondisi sama dengan `False`, maka program akan keluar dari ***statement while*** dan kemudian akan lanjut ke `statement` selanjutnya. Biasanya apabila kita salah membuat kondisi maka kita akan terjebak pada ***infinite loop*** dan program akan berjalan tanpa henti. Kondisi ini biasanya disebabkan karena kita tidak memasukan ***iteration variable***, sehingga kondisi berada pada keadaan `True` terus. Contohnya seperti ini:
+
+
+	`n = 3`
+	`while True:`
+		`print(n)`
+		`n = n - 1`
+	`print(“'DOOORRR!”)`
+
+Baris `while True:` akan menyebabkan terjadinya ***infinite loop***.
+	
 
 
 
