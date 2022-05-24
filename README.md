@@ -148,7 +148,7 @@ Komputer bisasnya digunakan untuk menjalankan pekerjaan repetisi, dan sangat han
 		`n = n - 1`
 	`print(“'DOOORRR!”)`
 
-Ketika atau `while`  n lebih besar daripada 0, tampilkan atau `print` nilai **n** dan kemudian kurangi nilai **n** dengan **1**.  Maka statement akan terus diulangi sampai nilai **n** sama dengan **0**, kemudian ketika **n** sama dengan **0**, statement `while` akan mendapat hasil `False` dan layar akan menmpilkan tulisan ** DOOORRR!**. Program diatas bisa dibaca oleh orang yang tidak memiliki latar pendidikan programming, dan itulah salah satu kelebihan Python.
+Ketika atau `while`  n lebih besar daripada 0, tampilkan atau `print` nilai **n** dan kemudian kurangi nilai **n** dengan **1**.  Maka statement akan terus diulangi sampai nilai **n** sama dengan **0**, kemudian ketika **n** sama dengan **0**, statement `while` akan mendapat hasil `False` dan layar akan menmpilkan tulisan **DOOORRR!**. Program diatas bisa dibaca oleh orang yang tidak memiliki latar pendidikan programming, dan itulah salah satu kelebihan Python.
 
 Apabila program itu diurai: langkah pertama, program tersebut memastikan `condition` atau kondisi, apakah menghasilkan `True` atau `False`. Kemudian apabila kondisi sama dengan `True`, maka program akan meneksekusi ***body statement*** dan kembali ke step 1. Teatapi, apabila kondisi sama dengan `False`, maka program akan keluar dari ***statement while*** dan kemudian akan lanjut ke `statement` selanjutnya. Biasanya apabila kita salah membuat kondisi maka kita akan terjebak pada ***infinite loop*** dan program akan berjalan tanpa henti. Kondisi ini biasanya disebabkan karena kita tidak memasukan ***iteration variable***, sehingga kondisi berada pada keadaan `True` terus. Contohnya seperti ini:
 
