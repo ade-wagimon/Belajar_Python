@@ -28,33 +28,33 @@ Programer adalah orang yang menulis program. Dalam proses menulis program tidak 
 # BAB 1
 ## Variable, Ekspresi dan Stetmen (*Variables, Expressions, and Statements*)
 
-Dalam pemrograman ada yang disebut `*Value*`, sebuah hal dasar yang suatu program kerjakan bisa berupa huruf atau angka. `*Value*` ini dibedakan berdasarkan `*Type*`-nya, misalkan `*Value*` yang berupa angka bulat itu disebut dengan *integer* (int) sendahkan `*Value*` yang berupa huruf disebut *string* (str). `*Value*` ini harus diberi julukan untuk membedakan satu `*Value*` dengan `*Value*` yang lain, julukan ini disebut disebut dengan dengan ***Variable***. Contoh: 
+Dalam pemrograman ada yang disebut `Value`, sebuah hal dasar yang suatu program kerjakan bisa berupa huruf atau angka. `Value` ini dibedakan berdasarkan `Type`-nya, misalkan `Value` yang berupa angka bulat itu disebut dengan **integer (int)** sendahkan `Value` yang berupa huruf disebut ***string (str)***. `Value` ini harus diberi julukan untuk membedakan satu `Value` dengan `Value` yang lain, julukan ini disebut disebut dengan dengan ***Variable***. Contoh: 
 
 	`pesan = "Hallo, apa kabar?"`
 	`pi = 3.14`
 
-Pada contoh di atas "Hallo, apa kabar?" merupakan `*Value*` dengan `*Type*` *string* dari ***Variable*** yang bernama `pesan`, dan 3.14 merupakan `*Value*` `*Type*` *float* dari ***Variable*** yang bernama pi. Dalam penulisan nama suatu variable, ada bebrapa hal yang tidak bisa digunakan sebagai nama dari suatu variable. Nama yang berawalan dari angka atau deretan angka tidak bisa digunakan sebagai nama variable, selain itu, nama yang memiliki karakter ilegal seperti *"@"* atau nama yang merupakan *reserved words* tidak bisa digunakan sebagai nama variabel. Berikut contoh-contoh nama yang tidak bisa digunakan:
+Pada contoh di atas "Hallo, apa kabar?" merupakan `Value` dengan `Type` **string** dari ***Variable*** yang bernama `pesan`, dan 3.14 merupakan `Value` `Type` **float** dari ***Variable*** yang bernama pi. Dalam penulisan nama suatu variable, ada bebrapa hal yang tidak bisa digunakan sebagai nama dari suatu variable. Nama yang berawalan dari angka atau deretan angka tidak bisa digunakan sebagai nama variable, selain itu, nama yang memiliki karakter ilegal seperti *"@"* atau nama yang merupakan ***reserved words*** tidak bisa digunakan sebagai nama variabel. Berikut contoh-contoh nama yang tidak bisa digunakan:
 
 	`76sytem = "POP OS"`
 	`nama@ = "Ade"`
 	`lambda = 1.6`
 
-Selain ketiga itu, nama suatu variabel tidak boleh mengandung "spasi". Sebagai programmer yang baik, kita harus terbiasa memberi nama variabel dengan nama yang mudah dimengerti dan terstruktur untuk digunakan dalam suatu program yang panjang, atau biasa disebut *mnemonic variable names*. Kata **mnemonic** memiliki arti **"memmory aid"**.***Variable*** didefinisikan dengan sebuah ***Statement*** yang disebut *Assigment Statement*. **Statement*** sendiri merupakan sebuah pernyataan yang dipakai untuk menjalankan satu unit kode/perintah. Berikut contoh lain dari suatu statement:
+Selain ketiga itu, nama suatu variabel tidak boleh mengandung "spasi". Sebagai programmer yang baik, kita harus terbiasa memberi nama variabel dengan nama yang mudah dimengerti dan terstruktur untuk digunakan dalam suatu program yang panjang, atau biasa disebut *mnemonic variable names*. Kata **mnemonic** memiliki arti ***memmory aid***.***Variable*** didefinisikan dengan sebuah ***Statement*** yang disebut *Assigment Statement*. **Statement*** sendiri merupakan sebuah pernyataan yang dipakai untuk menjalankan satu unit kode/perintah. Berikut contoh lain dari suatu statement:
 
 	`x = 2 + 1`
 	`y = x + 3`
 
-Dalam ***Statement*** "x =  2 + 1" ada tanda tambah "+" yang merupakan operator perhitungan, dimana statement ini akan menjalakan operator matematika penambahan 2 dengan 1. ***Statement*** "y = x + 3" berbeda dengan yang sebelumnya, disini ada huruf "x" yang merupakan variable yang telah didefinisikan pada statement sebelumnya. Dimana nilai "x" setara dengn "3" yang kemudian akan ditambahkan dengan "3" sesuai ***Statement*** pada variable "y" ini. Gabungan anatara `*Value*`, ***Variable*** dan operator disebut dengan **Ekspresi** atau ***Expressions***. 
+Dalam ***Statement*** **"x =  2 + 1"** ada tanda tambah **"+"** yang merupakan operator perhitungan, dimana statement ini akan menjalakan operator matematika penambahan 2 dengan 1. ***Statement*** **"y = x + 3"** berbeda dengan yang sebelumnya, disini ada huruf **"x"** yang merupakan variable yang telah didefinisikan pada statement sebelumnya. Dimana nilai **"x"** setara dengn **"3"** yang kemudian akan ditambahkan dengan **"3"** sesuai ***Statement*** pada variable **"y"** ini. Gabungan anatara `Value`, ***Variable*** dan operator disebut dengan **Ekspresi** atau ***Expressions***. 
 
 
 
 ## Operators
 
-***Operator*** merupakan simbol yang mewakili suatu operasi matematika, misal: "-", "+" dll. Seperti sama halnya dengan simbol-simbol pada suatu kalkulator, ***Operator*** pada Python memang berfungsi seperti itu. Tetapi, selain simbol-simbol matematika sederhana, ada juga ***Operator*** yang diwakili oleh dua simbol sekaligus, seperti simbol "//" yang berfungsi untuk mecari angka bulat dari suatu suatu pembagian. Contoh:
+***Operator*** merupakan simbol yang mewakili suatu operasi matematika, misal: **"-", "+"** dll. Seperti sama halnya dengan simbol-simbol pada suatu kalkulator, ***Operator*** pada Python memang berfungsi seperti itu. Tetapi, selain simbol-simbol matematika sederhana, ada juga ***Operator*** yang diwakili oleh dua simbol sekaligus, seperti simbol **"//"** yang berfungsi untuk mecari angka bulat dari suatu suatu pembagian. Contoh:
 
 	`x = 9 // 4`
 
-dimana 9 dibagi 4 sama dengan 2 dengan sisa 1, maka `"x = 2"`. ***Operator*** tersebut disebut dengan ***Modulus Operator***. Ada juga yang disebut dengan ***Comparison Operator***, merupakan ***Operator*** yang menghasilkan `*Value*` berupa `True` atau `False` atau `*Value*`dengan type 'boolean'. Contoh:
+dimana 9 dibagi 4 sama dengan 2 dengan sisa 1, maka **"x = 2"**. ***Operator*** tersebut disebut dengan ***Modulus Operator***. Ada juga yang disebut dengan ***Comparison Operator***, merupakan ***Operator*** yang menghasilkan `Value` berupa `True` atau `False` atau `Value`dengan type 'boolean'. Contoh:
 
 	`4 == 9'
 
@@ -71,7 +71,7 @@ Pada ***Comparison Operator*** tanda "lebih kecil" (<) dan tanda "lebih besar" (
 
 	`x > 5 and x < 9'
 
-x akan `True` apabila "x" lebih besar daripada 5 dan "x" lebih kecil dari 9, maka jika x = 9 akan `False`. 
+**x** akan `True` apabila **x** lebih besar daripada 5 dan **x** lebih kecil dari 9, maka jika **x = 9** akan `False`. 
 
 
 
@@ -94,7 +94,7 @@ pada script diatas, statement `print("kurang dari 10")` hanya akan dijalankan ap
 		`else:`
 			`print('x lebih besar dari 5')`
 
-Perhatikan, setiap statement setelah ***Conditional Statements*** pasti menjorok satu `tab`. Pada contoh diatas terdapat beberapa kondisi, bahkan ada kondisi dalam kondisi. Fungsi `"else"` berfungsi untuk memberi ***Alternative Execution*** atau ***branches*** atau kondisi alternatif selain fungsi `"if"`. Kemudian fungsi `"if"` dalam fungsi `"else"` merupakan ***Nested Conditionals***, atau kondisi yang bersarang dalam kondisi.  
+Perhatikan, setiap statement setelah ***Conditional Statements*** pasti menjorok satu `tab`. Pada contoh diatas terdapat beberapa kondisi, bahkan ada kondisi dalam kondisi. Fungsi `else` berfungsi untuk memberi ***Alternative Execution*** atau ***branches*** atau kondisi alternatif selain fungsi `if`. Kemudian fungsi `if` dalam fungsi `else` merupakan ***Nested Conditionals***, atau kondisi yang bersarang dalam kondisi.  
 
 
 
@@ -106,7 +106,7 @@ Dalam konteks programming, ***`fungsi`*** merupakan suatu sekuens dari beberapa 
 	`>>>type(45)`
 	`<class 'int'>`
  
-Pada contoh tersebut, `Type` merupakan `fungsi` yang di panggil, dan "45" adalah `value` yang dikenai fungsi. Seperti yang kita ketahui sebelumnya, `fungsi` `type` merupakan suatu fungsi yang bertujuan untuk mencari atau mengidentifikasi suatu jenis `value`. Maka, didaptkan interpretasi `class 'int'` atau suatu `integer`. Fungsi sendiri dibagi menjadi beberapa jenis, tapi secara garis besar terbagi menjadi dua jenis fungsi yaitu ***built in function*** dan ***definited function***. Sesuai dengan namanya ***built in function*** merupakan fungsi yang sudah tersedia di dalam package `Python`, contohnya adlah fungsi `type` diatas, sedangkan ***definited function*** adalah fungsi yang kita definisikan sendiri. Pada ***built in function*** ada yang disebut dengan ***math function***, fungsi ini buntuk memanggil fungsi atau rumus matematika seperti fungsi **sinus** dan **cosinus**, berikut contohnya:
+Pada contoh tersebut, `Type` merupakan `fungsi` yang di panggil, dan **45** adalah `value` yang dikenai fungsi. Seperti yang kita ketahui sebelumnya, `fungsi` `type` merupakan suatu fungsi yang bertujuan untuk mencari atau mengidentifikasi suatu jenis `value`. Maka, didaptkan interpretasi `class 'int'` atau suatu `integer`. Fungsi sendiri dibagi menjadi beberapa jenis, tapi secara garis besar terbagi menjadi dua jenis fungsi yaitu ***built in function*** dan ***definited function***. Sesuai dengan namanya ***built in function*** merupakan fungsi yang sudah tersedia di dalam package `Python`, contohnya adlah fungsi `type` diatas, sedangkan ***definited function*** adalah fungsi yang kita definisikan sendiri. Pada ***built in function*** ada yang disebut dengan ***math function***, fungsi ini buntuk memanggil fungsi atau rumus matematika seperti fungsi **sinus** dan **cosinus**, berikut contohnya:
 
 	`import math`
 	`x = math.sin(45)`
