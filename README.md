@@ -160,7 +160,144 @@ Apabila program itu diurai: langkah pertama, program tersebut memastikan `condit
 	`print(“'DOOORRR!”)`
 
 Baris `while True:` akan menyebabkan terjadinya ***infinite loop***.
+
+
 	
+
+
+## Strings
+
+`String` merupakan sebuah sekuens dari karakter/huruf. Untuk membuat suatu variabel yang berisi `string`, tulisakan `value` dalam **tanda kutip (‘/”)**. Contoh:
+	
+	`contoh = “ini str”`
+
+Setiap karakter dalam **tanda petik** memiliki nomor urutan yang disebut ***index*** dimuklai dari urutan **0** sampai seterusnya.
+
+	`>>>list(enumerate(contoh))`
+	`[(0, 'i'), (1, 'n'), (2, 'i'), (3, ' '), (4, 's'), (5, 't'), (6, 'r')]`
+
+Dengan menggunakan peritah diatas, kita bisa melihat nomor ***`index`*** dari setiap karakter. Kemudian kita juga bisa memangil setiap karakter tersebut dengan perintah:
+	
+	`contoh[1]`
+	`contoh[0:3]`
+
+dengan perintah pertama kita akan memanggil karakter pada `index` nomor **1** yaitu huruf **n**. Sedangkan perintah yang kedua kita akan memotong `string` `index` nomor **0** sampai dengan karakter sebelum `index` nomor **3**, maka interpreter akan menampilkan kata **‘ini**.  
+
+`String` juga bersifat ***immutable*** atau tidak bisa dimutasi. Maksudnya adalah, karakter atau value yang ada pada suatu string tidak bisa diganti/dimutasi. Contoh:
+
+	`contoh = “ini str”`
+	`contoh[0] = ‘I’`
+
+Perintah diatas adalah perintah yang bertujuan untuk mengganti karakter **i** dengan karakter **I**, apabila perintah tersebut dijalankan, maka kita akan mendapatkan pesan error ***TypeError: 'str' object does not support item assignment***.
+
+Adapun bebrapa cara atau `methods` yang bisa digunakan untuk berkerja dengan string adalah sebagai beikut:
+
+	`['capitalize', 'casefold', 'center', 'count', 'encode',`
+	`'endswith' , 'expandtabs', 'find', 'format', 'format_map',`
+	`'index' , 'isalnum', 'isalpha', 'isdecimal', 'isdigit',`
+	`'isidentifier' , 'islower', 'isnumeric', 'isprintable',`
+	`'isspace' , 'istitle', 'isupper', 'join', 'ljust', 'lower',`
+	`'lstrip' , 'maketrans', 'partition', 'replace', 'rfind',`
+	`'rindex' , 'rjust', 'rpartition', 'rsplit', 'rstrip',`
+	`'split' , 'splitlines', 'startswith', 'strip', 'swapcase',`
+	`'title' , 'translate', 'upper', 'zfill']`
+
+berukut contoh penggunannya: 
+
+	`>>>contoh = “ini str”`
+	`>>>kapital = contoh.upper’
+	`>>>print(kapital)
+	`INI STR`
+
+fungsi `upper` akan memebuat semua karakter pada string tersebut menjadi uppercase atau **huruf kapital**.
+
+
+
+## Lists
+
+`List` merupakan sekuens atau kumpulan urutan yang tersusun oleh value-value yang disebut **elements** atau **items**. 
+
+	`suku = [‘Jawa’, ‘Sunda’, ‘Minang’, ‘Melayu’, ‘Bugis’, ‘Dayak’]`
+	`ukuran_sepatu = [37, 38, 39, 40, 41, 42, 43, 44]`
+
+kedua contoh diatas merupakan `list` yang tersusun dari **elements** dengan  satu `data.type` yang sama, `list` yang berisi `integer` dan `list` yang berisi `string`. List juga bisa berisi dari berbagai `data.type` seperti:
+
+	`ujang = [‘laki-laki’, 23, 173, 65, [“a”,”b”,”c”]]’
+
+Contoh diatas adaah contoh `list` yang berisi beberapa `type` elements, bahkan ada `list` di dalam `list` itu sendiri. 
+
+Sebagaimana `string`, `list` juga memilki nomor urutan bagi setiap elements, yang bisa dipanggil dengan nomor indexnya. Tetapi, berbeda dengan `string`, `list` ini bersifa mutable atau dapat dimutasi. 
+
+ 	`>>>ukuran_sepatu = [37, 38, 39, 40, 41, 42, 43, 44]`
+	`>>>ukuran_sepatu[1] = 35`
+	`>>>ukuran_sepatu`
+	`[37, 35, 39, 40, 41, 42, 43, 44]`
+
+sifat mutabil ini membuat list lebih fleksible tetapi rawan berubah. Berikut adalah beberapa method yang bisa digunakan untuk `list`:
+
+ 	`>>>ukuran_sepatu = [37, 38, 39, 40, 41, 42, 43, 44]`
+	`>>>ukuran_sepatu.append(‘47’)
+	`>>>ukuran_sepatu`
+	`[37, 38, 39, 40, 41, 42, 43, 44, 47]`
+	`>>>ukuran2 = [45, 46, 48, 49]
+	`>>>ukuran_sepatu.extend(ukuran2)
+	`>>>ukuran_sepatu`
+	`[37, 38, 39, 40, 41, 42, 43, 44, 47, 45, 46, 48, 49]`
+
+selain itu, apabila suatu `list` memiliki element yang sama dengan `list` yang lain, maka python akan membacanya sebagai dua objek yang berbeda, sedangkan pada `string` itu merupakan objek yang sama. Contoh:
+
+	`>>>a = “apel”`
+	`>>>a2 = “apel”`
+	`>>> a is a2`
+	`True`
+
+sedangkan
+
+	`>>>a = [“apel”]`
+	`>>>a2 = [“apel”]`
+	`>>> a is a2`
+	`False`
+
+meskipun kedua list tersebut memiliki element yang sama, kedua objek tersebut tetap objek yang berbeda. Suatu objek itu memiliki `value`, jadi objek satu dengan yang lainnya bisa saja memiliki value yang sama.
+
+
+## Tuple
+`Tuple` mirip dengan list, tapi apabila kalau kita membuat suatu list itu menulis assigment element-element dalam kurung siku, pada `tuple` itu ditulis dengan tanda kurung biasa. Kemudian `tuple` juga bisa menggunakan variable sebagai pengganti nomor index. Contoh:
+
+	`>>>a = (“apel”, ”anggur”)`
+	`>>>(a1, a2) = a`
+	`>>>a1`
+	`’apel’`
+	`>>>a2`
+	`’anggur’`
+
+atau bisa langsung ditulis seperti ini:\
+
+	`>>>a1, a2 = “apel”, “anggur”`
+	`>>>a1`
+	`’apel’`
+	`>>>a2`
+	`’anggur’`
+
+Terakhir, tuple itu bersifat immutable, atau tidak bisa dimutasi.
+
+
+## Dictionary
+
+Selain `stirng`, `list`, dan `tuple` ada juga yang disebut `dictionary` yang merupaka ***compound data type***. `dictionary` bersifat immutable, dan juga memilki nama/julukan untuk setiap element-nya. Nama/julukan-element ini disebut dengan ***key:value pairs***. 
+
+	`>>>terjemah = {}`
+	`>>>terjemah[“satu”] = “yi”`
+	`>>>terjemah[“dua”]= “er”`
+	`>>>pritnt(terjemah)’
+	`{“dua” : “er”. “satu” : “yi”}`
+
+dan untuk memanggil dictionary tersebut adalah seperti ini:
+
+	`>>>print(terjemah[“dua”])`
+	`’er’`
+
+
 
 
 
